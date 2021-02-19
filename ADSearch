@@ -1,0 +1,3 @@
+Get-ADUser -Filter {name -like "*NAME*"} -Properties Description,info | Select Name,samaccountname,Description,info | Sort Name
+
+Get-ADGroup -Filter {name -like "*ADMIN*"} -Properties Description,info | Select Name,samaccountname,Description,info | Sort Name
